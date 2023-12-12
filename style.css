@@ -1,0 +1,92 @@
+    /* 
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .mondrian-location{
+      flex-direction: column;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 329px 207px 162px 50px;
+      grid-template-rows: 423px 140px 165px 20px;
+    }
+    .red{
+      grid-template-columns: 320px;
+      grid-template-rows: 414px;
+      background-color: #E72F24;
+      border-right: 9px solid #000;
+      border-bottom: 9px solid #000; 
+    }
+    .grey-top{
+      background-color: #F0F1EC;
+      grid-template-rows:414px;
+      grid-column: span 3;
+      border-bottom: 9px solid black;
+    }
+    .grey-center{
+      grid-template-columns: 320px;
+      grid-template-rows: 305px;
+      grid-row: span 2;
+      background-color: #F0F1EC;
+      border-bottom: 9px solid black;
+      border-right: 9px solid black;
+    }
+    .grey-middle{
+      grid-template-columns: 360px;
+      grid-column: span 2;
+      grid-row:span 2;
+      grid-template-rows:305px;
+      background-color: #F0F1EC;
+      border-right: 9px solid black;
+    }
+    .blue{
+      background-color: #004592;
+      grid-template-columns: 50px;
+      grid-template-rows: 130px;
+      border-bottom: 10px solid black;
+    }
+    .grey-bottom-right{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .grey-bottom-left{
+      background-color: #F0F1EC;
+      grid-template-columns: 320px;
+      border-right: 9px solid black;
+    }
+    .yellow-center{
+      background-color:#F9D01E;
+      border-right: 9 solid black;
+    }
+    .black{
+      background-color:#232629;
+      border-right: 9px solid black;
+    }
+    h1{ 
+      text-align: center;
+      font-size: 4rem;
+      font-family: 'Whisper', cursive;
+      font-weight: 700;
+      
+    }
+    p{
+      text-align: center;
+      font-weight: 300px;
+      font-size: 1.5rem;
+      font-family: 'Kalnia', serif;
+    }
